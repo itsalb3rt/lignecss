@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ligne CSS</title>
+    <link rel="stylesheet" href="src/ligne.css">
+    <link rel="stylesheet" href="extra/style.css">
+    <script src="extra/rainbow-custom.min.js"></script>
+    <script src="extra/html.js"></script>
+    <style>
+        /*Esto es solo para la demo, no se incluye en la libreria y tampoco es necesario hacerlo*/
+
+        * {
+            font-family: Verdana,sans-serif;
+        }
+        div.margin{
+            margin: 10px auto;
+        }
+        .demo1grid .box,.box-row {
+            position: relative;
+            box-sizing: border-box;
+            min-height: 1rem;
+            margin-bottom: 0;
+            background: #ff726b;
+            border: 1px solid #FFF;
+            border-radius: 2px;
+            overflow: hidden;
+            text-align: center;
+            color: #fff;
+        }
+        .demo1grid .box-row {
+            margin-bottom: 1rem;
+        }
+        .demo1grid .box, .box-row {
+            padding: 1rem;
+        }
+        a.credit,a.credit:visited,a.credit:hover{
+            color: tomato;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row center-lg">
+        <div class="col-lg-12">
+            <div class="box">
+                <h1 class="gradient">Ligne CSS</h1>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <strong>Ligne CSS</strong> es una hoja de estilo ligera basada en necesidades comunes para facilitar la manera de dar estilo a los elementos de un sitio web.
+            <ul>
+                <li>
+                    Normalización de elementos HTML <em>(Hace que tus elementos se muestren igual en todos los navegadores modernos)</em>
+                </li>
+                <li>
+                    Formularios
+                </li>
+                <li>
+                    Botones
+                </li>
+                <li>
+                    Tablas
+                </li>
+                <li>
+                    Sistemas de cuadriculas basado en flexbox
+                </li>
+                <li>
+                    Paneles
+                </li>
+            </ul>
+            <div>
+                Para comenzar a utilizar esta hoja de estilos solo debes agregar la misma en tu encabezado HTML.
+                <pre>
+<code data-language="html">
+<link rel="stylesheet" href="src/ligne.css">
+</code>
+</pre>
+                <em>En el repositorio de <a href="https://github.com/itsalb3rt/ligne-css">GitHub</a> este archivo está en el directorio <strong>src</strong></em>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="box">
+                <div class="buttons">
+                    <h1>Buttons</h1>
+                    <div class="normal">
+                        <h3>Normal Button</h3>
+                        <div>
+                            <div class="panel panel-default medium">
+                                <div class="panel-heading primary">Estilos de botones</div>
+                                <div class="panel-body">
+                                    Se puede crear un botón básico con un mínimo de marcado. Debido a que los botones se pueden usar para muchos propósitos, es importante usar la etiqueta correcta.
+                                    <pre>
+ <code data-language="html">
+<button class="button primary">Primary</button>
+<button class="button secondary">Secundary</button>
+<button class="button success">Success</button>
+<button class="button danger">Danger</button>
+<button class="button warning">Warning</button>
+<button class="button info">Info</button>
+</code>
+                            </pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="button primary">Primary</button>
+                            <button class="button secondary">Secundary</button>
+                            <button class="button success">Success</button>
+                            <button class="button danger">Danger</button>
+                            <button class="button warning">Warning</button>
+                            <button class="button info">Info</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="size">
+                        <h3>Size Button</h3>
+                        <div class="panel panel-default medium">
+                            <div class="panel-heading primary">Tamaños</div>
+                            <div class="panel-body">
+                                Se pueden agregar clases extras para cambiar el tamaño de tus botones
+                                <pre>
+<code data-language="html">
+<button class="button primary tiny">Tiny</button>
+<button class="button primary small">Small</button>
+<button class="button primary">Default</button>
+<button class="button primary large">Large</button>
+
+<button class="button primary tiny expanded">Tiny expanded</button>
+<button class="button primary expanded">Normal expanded</button>
+</code>
+</pre>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <button class="button primary tiny">Tiny</button>
+                                <button class="button primary small">Small</button>
+                                <button class="button primary">Default</button>
+                                <button class="button primary large">Large</button>
+                            </div>
+                            <div>
+                                <h3>Expanded</h3>
+                                <div class="margin">
+                                    <button class="button primary tiny expanded">Tiny expanded</button>
+                                </div>
+                                <div class="margin">
+                                    <button class="button primary expanded">Normal expanded</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="hollowbuttons">
+                        <h3>Hollow Button</h3>
+                        <div class="panel panel-default medium">
+                            <div class="panel-heading primary">Estilo Hueco</div>
+                            <div class="panel-body">
+                                Agrega la clase <strong>hollowclase</strong> a un botón para darle un estilo hueco.
+                                <pre>
+<code data-language="html">
+<button class="button primary hollow">Primary</button>
+<button class="button secondary hollow">Secundary</button>
+<button class="button success hollow">Success</button>
+<button class="button danger hollow">Danger</button>
+<button class="button warning hollow">Warning</button>
+<button class="button info hollow">Info</button>
+</code>
+</pre>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="button primary hollow">Primary</button>
+                            <button class="button secondary hollow">Secundary</button>
+                            <button class="button success hollow">Success</button>
+                            <button class="button danger hollow">Danger</button>
+                            <button class="button warning hollow">Warning</button>
+                            <button class="button info hollow">Info</button>
+                        </div>
+                    </div>
+
+                    <div class="disabledbuttons">
+                        <h3>Disabled Button</h3>
+                        <div class="panel panel-default medium">
+                            <div class="panel-heading primary">Estilos de botones desactivados</div>
+                            <div class="panel-body">
+                                El atributo <strong>disabled</strong> dará a los botones una apariencia descolorida.
+                                <pre>
+<code data-language="html">
+<button class="button primary" disabled>Primary</button>
+<button class="button secondary" disabled>Secundary</button>
+<button class="button success" disabled>Success</button>
+<button class="button danger" disabled>Danger</button>
+<button class="button warning" disabled>Warning</button>
+<button class="button info" disabled>Info</button>
+
+<button class="button primary hollow" disabled>Primary</button>
+<button class="button secondary hollow" disabled>Secundary</button>
+<button class="button success hollow" disabled>Success</button>
+<button class="button danger hollow" disabled>Danger</button>
+<button class="button warning hollow" disabled>Warning</button>
+<button class="button info hollow" disabled>Info</button>
+</code>
+</pre>
+                            </div>
+                        </div>
+                        <div class="margin">
+                            <button class="button primary" disabled>Primary</button>
+                            <button class="button secondary" disabled>Secundary</button>
+                            <button class="button success" disabled>Success</button>
+                            <button class="button danger" disabled>Danger</button>
+                            <button class="button warning" disabled>Warning</button>
+                            <button class="button info" disabled>Info</button>
+                        </div>
+                        <div class="margin">
+                            <button class="button primary hollow" disabled>Primary</button>
+                            <button class="button secondary hollow" disabled>Secundary</button>
+                            <button class="button success hollow" disabled>Success</button>
+                            <button class="button danger hollow" disabled>Danger</button>
+                            <button class="button warning hollow" disabled>Warning</button>
+                            <button class="button info hollow" disabled>Info</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-examples">
+                    <h1>Forms</h1>
+                    <div class="panel panel-default medium">
+                        <div class="panel-heading primary">Estilos de formularios y accesibilidad</div>
+                        <div class="panel-body">
+                            El formulario nunca ha sido muy divertido, y puede ser absolutamente fustrante en un dispositivo móvil con su teclado en pantalla.
+                            <pre>
+                                <code data-language="html">
+<form action="#" method="post">
+   <div class="input-group">
+      <div>
+         <label for="name">Name</label>
+         <input type="text" id="name" required>
+      </div>
+      <div>
+         <label for="mail">mail</label>
+         <input type="email" id="mail" required>
+      </div>
+      <div>
+         <label for="colors">Favorite color</label>
+         <select name="selec_color" id="colors" required>
+            <option value="blue" selected>Blue</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+         </select>
+      </div>
+      <div>
+         <label for="textarea">Message</label>
+         <textarea name="text_area" id="textarea" cols="30" rows="3"></textarea>
+      </div>
+   </div>
+   <div>
+      <input type="submit" class="button primary" value="Send Info!">
+      <input type="reset" class="button danger" value="Clear form">
+   </div>
+</form>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="form1">
+                        <h3>Contact Form</h3>
+                        <form action="#" method="post">
+                            <div class="input-group">
+                                <div>
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" required>
+                                </div>
+                                <div>
+                                    <label for="mail">mail</label>
+                                    <input type="email" id="mail" required>
+                                </div>
+                                <div>
+                                    <label for="colors">Favorite color</label>
+                                    <select name="selec_color" id="colors" required>
+                                        <option value="blue" selected>Blue</option>
+                                        <option value="red">Red</option>
+                                        <option value="black">Black</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="textarea">Message</label>
+                                    <textarea name="text_area" id="textarea" cols="30" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="submit" class="button primary" value="Send Info!">
+                                <input type="reset" class="button danger" value="Clear form">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form2">
+                        <h3>Login form</h3>
+                        <div class="panel panel-default medium">
+                            <div class="panel-heading primary">Formulario de contacto</div>
+                            <div class="panel-body">
+                                Un simple formulario de login jamas fue tan simple de darle estilo
+                                <pre>
+<code data-language="html">
+<form action="#" method="post">
+   <div class="input-group small">
+      <div>
+         <label for="username">User</label>
+         <input type="text" id="username">
+      </div>
+      <div>
+         <label for="password">Password</label>
+         <input type="password" id="password">
+      </div>
+      <div>
+         <a href="#">Forgot password?</a>
+      </div>
+   </div>
+   <div>
+      <input type="submit" class="button success" value="Sign in">
+   </div>
+</form>
+</code>
+</pre>
+                            </div>
+                        </div>
+                        <div class="panel panel-default small">
+                            <div class="panel-body">
+                                <form action="#" method="post">
+                                    <div class="input-group small">
+                                        <div>
+                                            <label for="username">User</label>
+                                            <input type="text" id="username">
+                                        </div>
+                                        <div>
+                                            <label for="password">Password</label>
+                                            <input type="password" id="password">
+                                        </div>
+                                        <div>
+                                            <a href="#">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="submit" class="button success" value="Sign in">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="panels">
+                    <h1>Panels</h1>
+                    <div class="panel panel-default">
+                        <div class="panel-heading primary">Paneles o cajas</div>
+                        <div class="panel-body">
+                            A veces es posible que necesite colocar su contenido en un cuadro para una mejor presentación. En la forma más básica, los paneles se les aplica un poco redondeo en los bordes y padding alrededor del contenido.
+                            <pre>
+<code data-language="html">
+<div class="panel panel-default small">
+   <div class="panel-heading primary">panel head</div>
+   <div class="panel-body">
+      panel body
+   </div>
+</div>
+</code>
+</pre>
+                            También es posible indicar el color del encabezado con las clases <strong>primary</strong>, <strong>secondary</strong> y <strong>danger</strong>. Al igual que el tamaño del panel con las clases <strong>small</strong> y <strong>medium</strong>, por defecto el panel viene de un tamaño del 100%.
+                        </div>
+                    </div>
+                    <h3>Small Panel</h3>
+                    <div>
+                        <div class="panel panel-default small">
+                            <div class="panel-heading primary"><strong>Small panel primary</strong></div>
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet harum minima modi, obcaecati perferendis porro repudiandae temporibus velit voluptatibus voluptatum? A delectus eius et eveniet exercitationem fugiat neque repellat reprehenderit.
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Medium panel</h3>
+                    <div>
+                        <div class="panel panel-default medium">
+                            <div class="panel-heading danger"><strong>Medium Panel and danger</strong></div>
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet harum minima modi, obcaecati perferendis porro repudiandae temporibus velit voluptatibus voluptatum? A delectus eius et eveniet exercitationem fugiat neque repellat reprehenderit.
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Full panel</h3>
+                    <div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading success"><strong>Full panel and success</strong></div>
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet harum minima modi, obcaecati perferendis porro repudiandae temporibus velit voluptatibus voluptatum? A delectus eius et eveniet exercitationem fugiat neque repellat reprehenderit.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h1>Tables</h1>
+                    <div class="table_examples">
+                        <div class="panel panel-default medium">
+                            <div class="panel-heading primary">Estilos de tablas</div>
+                            <div class="panel-body">
+                                El elemento Tabla representa datos en dos dimensiones o más. Fomentamos el uso de un formato adecuado con <strong>thead</strong> y <strong>tbody</strong> para crear un formato de tabla. El código se vuelve más limpio.
+                                <pre>
+<code data-language="html">
+<table class="table">
+   <thead>
+      <tr>
+         <th>#</th>
+         <th>Name</th>
+         <th>City</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>1</td>
+         <td>Albert</td>
+         <td>Santiago</td>
+      </tr>
+      <tr>
+         <td>2</td>
+         <td>Giant</td>
+         <td>San Francisco</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>Fulano</td>
+         <td>La Vega</td>
+      </tr>
+   </tbody>
+</table>
+</code>
+</pre>
+                            </div>
+                        </div>
+                        <h3>Normal table</h3>
+                        <div class="table1">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>City</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Albert</td>
+                                    <td>Santiago</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Giant</td>
+                                    <td>San Francisco</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Fulano</td>
+                                    <td>La Vega</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Striped table</h3>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Tablas rayadas o zebras</div>
+                            <div class="panel-body">
+                                Es posible crear tablas rayas o de zebra con solo agregar la clase <strong>striped</strong> como una clase extra en tu tabla
+                                <pre>
+<code data-language="html">
+<table class="table striped"></table>
+</code>
+</pre>
+                            </div>
+                        </div>
+                        <div class="table2">
+                            <table class="table striped">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>City</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Albert</td>
+                                    <td>Santiago</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Giant</td>
+                                    <td>San Francisco</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Fulano</td>
+                                    <td>La Vega</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Bordered table</h3>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Tablas con bordes</div>
+                            <div class="panel-body">
+                                Es posible crear tablas con bordes agregando la clase <strong>bordered</strong> esta se puede utilizar en conjunto con <strong>striped</strong>
+                                <pre>
+<code data-language="html">
+<table class="table striped bordered"></table>
+</code>
+</pre>
+                            </div>
+                        </div>
+                        <div class="table3">
+                            <table class="table striped bordered">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>City</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Albert</td>
+                                    <td>Santiago</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Giant</td>
+                                    <td>San Francisco</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Fulano</td>
+                                    <td>La Vega</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Hover table success</h3>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Tablas con bordes</div>
+                            <div class="panel-body">
+                                Si quieres agregar un efecto cuando el usuario pase el puntero por encima de una fila, con solo agregar la clase <strong>hover</strong> puedes lograr esto, como un plus puedes agregarle colores a los encabezados utilizando las clases<strong>primary</strong>, <strong>success</strong> y <strong>danger</strong>
+                                <pre>
+<code data-language="html">
+<table class="table hover bordered primary"></table>
+<table class="table hover bordered success"></table>
+<table class="table hover bordered danger"></table>
+</code>
+</pre>
+                            </div>
+                        </div>
+                        <div class="table4">
+                            <table class="table hover bordered primary">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>City</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Albert</td>
+                                    <td>Santiago</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Giant</td>
+                                    <td>San Francisco</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Fulano</td>
+                                    <td>La Vega</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Small table primary</h3>
+                        <div class="table5">
+                            <table class="table striped bordered small success">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>City</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Albert</td>
+                                    <td>Santiago</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Giant</td>
+                                    <td>San Francisco</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Fulano</td>
+                                    <td>La Vega</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Medium table secondary</h3>
+                        <div class="table6">
+                            <table class="table striped bordered medium secondary border-radius">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>City</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Albert</td>
+                                    <td>Santiago</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Giant</td>
+                                    <td>San Francisco</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Fulano</td>
+                                    <td>La Vega</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <hr>
+        <h1>Grid css based on Flex</h1>
+        <div class="panel panel-default medium">
+            <div class="panel-heading primary">Sistema de cuadriculas basado en FlexBox</div>
+            <div class="panel-body">
+                Tienes a tu disposición un sistema de cuadriculas totalmente responsive y felxible para cualquier ambiente. Si te fijas todo lo anteriormente esta construido con este sistema :)
+                <pre>
+<code data-language="html">
+<div class="row">
+   <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">
+      <div class="box"></div>
+   </div>
+   <div class="col-xs-6 col-sm-6 col-md-8 col-lg-10">
+      <div class="box"></div>
+   </div>
+   <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
+      <div class="box"></div>
+   </div>
+</div>
+</code>
+</pre>
+            </div>
+        </div>
+        <div class="demo1grid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">
+                    <div class="box"></div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-8 col-lg-10">
+                    <div class="box"></div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">
+                    <div class="box"></div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-10 col-sm-6 col-md-8 col-lg-10">
+                    <div class="box"></div>
+                </div>
+                <div class="col-xs-2 col-sm-6 col-md-4 col-lg-2">
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row center-lg" style="margin: 20px auto;">
+        <div class="col-lg-12">
+            <div class="box">
+                <a class="credit" href="https://github.com/itsalb3rt/ligne-css">Albert E. Hidalgo Taveras on GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
