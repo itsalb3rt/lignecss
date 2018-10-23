@@ -168,7 +168,7 @@ button, input, optgroup, select, textarea {
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: .25rem;
+    border-radius: 4px;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -213,7 +213,7 @@ button, input, optgroup, select, textarea {
     background-color: #d32f2f;
     border-color: #d32f2f;
 }
-.danger:hover {
+.button.danger:hover {
     color: #fff;
     background-color: #b71c1c;
     border-color: #b71c1c;
@@ -451,7 +451,44 @@ th {
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
-
+/*Estilos de enlaces*/
+a.primary,a.primary:visited,a.primary:active{
+    color: #03A9F4!important;
+}
+a.primary:hover{
+    color: tomato!important;
+}
+a.success,a.success:visited,a.success:active{
+    color: #4CAF50!important;
+}
+a.success:hover{
+    color: #306d34 !important;
+}
+a.warning,a.warning:visited,a.warning:active{
+    color: #FFB300!important;
+}
+a.warning:hover{
+    color: #ad7a00 !important;
+}
+a.danger,a.danger:visited,a.danger:active{
+    color: #d32f2f!important;
+}
+a.danger:hover{
+    color: #d36a00 !important;
+}
+a.important{
+    font-weight: bold;
+}
+a.undecoration{
+    text-decoration: none;
+}
+/*Alinear elementos*/
+.right{
+    float: right!important;
+}
+.left{
+    float: left!important;
+}
     /*flexboxgrid*/
 .container-fluid,
 .container {
