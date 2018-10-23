@@ -17,7 +17,7 @@
 
 y muchas cosas mas...
 
-Para ver todo esto acceder al siguiente enlace: [https://itsalb3rt.github.io/lignecss/](https://itsalb3rt.github.io/lignecss/)
+Para ver esto junto a la documentación, puedes acceder desde el siguiente enlace: [https://itsalb3rt.github.io/lignecss/](https://itsalb3rt.github.io/lignecss/)
 
 
 ------------
