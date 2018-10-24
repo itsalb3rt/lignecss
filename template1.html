@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template 1</title>
+    <link rel="stylesheet" href="src/ligne.css">
+    <link rel="stylesheet" href="extra/style.css">
+    <script src="extra/rainbow-custom.min.js"></script>
+    <script src="extra/html.js"></script>
+    <style>
+        * {
+            font-family: Verdana,sans-serif;
+        }
+        .box.head{
+            min-height: 50px;
+        }
+        .box.main-body{
+            min-height: 500px;
+            background-image: linear-gradient(to right top, #0d47a1, #005fb8, #0077cd, #0090e1, #03a9f4);
+            padding: 50px 10px 10px 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+        .box{
+            min-width: 500px;
+        }
+        div.box{
+            margin: 10px auto;
+        }
+        .main-menu > a{
+            margin: auto 20px;
+        }
+        h1,h2,h3,h4{
+            color: white;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+        }
+        .description{
+            color: white;
+        }
+        a.logo{
+            font-size: 20px!important;
+        }
+        div.footer{
+            margin-top: 100px;
+        }
+        .main-container{
+            max-width: 98%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="main-container">
+    <div class="row center-lg">
+        <div class="col-lg-12">
+            <div class="box head">
+                <div class="panel">
+                    <div class="body">
+                        <span class="left"><a href="#" class="undecoration primary logo">&#10064; Data soluctions</a></span>
+                        <div class="right main-menu">
+                            <a href="#" class="undecoration important primary">Home</a>
+                            <a href="#" class="undecoration important primary">Solutions</a>
+                            <a href="#" class="undecoration important primary">Customers</a>
+                            <a href="#" class="undecoration important primary">Pricing</a>
+                            <button class="button hollow primary small">Log In</button>
+                            <button class="button hollow info small">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box main-body">
+                <div class="row middle-lg">
+                    <div class="col-lg-5">
+                        <div class="box">
+                            <img width="95%" style="opacity: 0.6;" src="img/template1/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <h1>Data Lorem ipsum dolor sit amet.</h1>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perspiciatis, ullam.
+                            </p>
+                            <div>
+                                <button class="button large">Sign Up</button> <span class="description"> Or</span> <a href="#" class="undecoration white important">Request a demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="box footer">
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cum dicta dolorum eaque illum, laboriosam laborum molestias nam nostrum numquam odit pariatur qui quidem quod reiciendis rem similique ut vero?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

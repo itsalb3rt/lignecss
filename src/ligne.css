@@ -155,23 +155,38 @@ button, input, optgroup, select, textarea {
 }
 .button{
     outline: none;
+    background-color: white;
     display: inline-block;
     font-weight: 400;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 4px;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: 1px 1px 2px 0px rgba(128, 128, 128, 0.4);
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(128, 128, 128, 0.4);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(128, 128, 128, 0.4);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
 }
-
+.button:active{
+    box-shadow: none;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
 .button.primary {
     color: #fff;
     background-color: #03A9F4;
@@ -336,28 +351,28 @@ button, input, optgroup, select, textarea {
     background-color: #fff;
     border: 1px solid transparent;
     border-radius: 4px;
+}
+.panel.bordered {
+    border-color: #ddd;
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
-.panel-default {
-    border-color: #ddd;
-}
-.panel-default>.panel-heading {
+.panel > .head {
     color: #333;
     background-color: #f5f5f5;
     border-color: #ddd;
 }
-.panel-heading {
+.panel > .head {
     padding: 10px 15px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
 
-.panel-body {
+.panel .body {
     padding: 15px;
 }
-.panel-body label{
+.panel .body label{
     font-weight: bold;
 }
 
@@ -368,18 +383,18 @@ button, input, optgroup, select, textarea {
     max-width: 60%;
 }
 
-.panel-heading.primary{
+.panel .head.primary{
     color: #fff;
     background-color: #03A9F4;
     border-color: #03A9F4;
 }
-.panel-heading.danger {
+.panel .head.danger {
     color: #fff;
     background-color: #d32f2f;
     border-color: #d32f2f;
 }
 
-.panel-heading.success {
+.panel .head.success {
     color: #fff;
     background-color: #4CAF50;
     border-color: #4CAF50;
@@ -407,10 +422,12 @@ th {
 .table.small{
     width: 20%!important;
     max-width: 20% !important;
+    font-size:11px!important;
 }
 .table.medium{
     width: 50%!important;
     max-width: 50% !important;
+    font-size:12px!important;
 }
 .table.responsive{
     display: block;
@@ -457,6 +474,9 @@ a.primary,a.primary:visited,a.primary:active{
 }
 a.primary:hover{
     color: tomato!important;
+}
+a.white,a.white:visited,a.white:active{
+    color: white!important;
 }
 a.success,a.success:visited,a.success:active{
     color: #4CAF50!important;

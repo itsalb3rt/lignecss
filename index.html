@@ -50,8 +50,8 @@
             </div>
         </div>
     </div>
-    <div class="panel panel-default">
-        <div class="panel-body">
+    <div class="panel bordered">
+        <div class="body">
             <strong>Ligne CSS</strong> es una hoja de estilo ligera basada en necesidades comunes para facilitar la manera de dar estilo a los elementos de un sitio web.
             <ul>
                 <li>
@@ -61,16 +61,16 @@
                     Formularios
                 </li>
                 <li>
-                    Botones
+                    Botones que sobre salen ante todo el contenido
                 </li>
                 <li>
-                    Tablas
+                    Tablas con algunas variaciones
                 </li>
                 <li>
                     Sistemas de cuadriculas basado en flexbox
                 </li>
                 <li>
-                    Paneles
+                    Contenedores o paneles
                 </li>
             </ul>
             <div>
@@ -90,7 +90,7 @@
                     <tbody>
                         <td><a href="#buttons_example" class="primary undecoration important">&#10148;Botones</a></td>
                         <td><a href="#form_example" class="success undecoration important">&#9989;Formularios</a></td>
-                        <td><a href="#panels_example" class="warning undecoration important">&#10064;Paneles y contenedores</a></td>
+                        <td><a href="#panels_example" class="warning undecoration important">&#10064;Contenedores o paneles</a></td>
                         <td><a href="#table_example"class="danger undecoration important">&#10140;Tablas y formatos de tablas</a></td>
                         <td><a href="#grid_example"class="primary undecoration important">&#10140;Grid basado en Flexbox</a></td>
                     </tbody>
@@ -107,9 +107,9 @@
                     <div class="normal">
                         <h3>Normal Button</h3>
                         <div>
-                            <div class="panel panel-default medium">
-                                <div class="panel-heading primary">Estilos de botones</div>
-                                <div class="panel-body">
+                            <div class="panel bordered medium">
+                                <div class="head primary">Estilos de botones</div>
+                                <div class="body">
                                     Se puede crear un botón básico con un mínimo de marcado. Debido a que los botones se pueden usar para muchos propósitos, es importante usar la etiqueta correcta.
                                     <pre>
  <code data-language="html">
@@ -136,9 +136,9 @@
                     <hr>
                     <div class="size">
                         <h3>Size Button</h3>
-                        <div class="panel panel-default medium">
-                            <div class="panel-heading primary">Tamaños</div>
-                            <div class="panel-body">
+                        <div class="panel bordered medium">
+                            <div class="head primary">Tamaños</div>
+                            <div class="body">
                                 Se pueden agregar clases extras para cambiar el tamaño de tus botones
                                 <pre>
 <code data-language="html">
@@ -174,9 +174,9 @@
                     <hr>
                     <div class="hollowbuttons">
                         <h3>Hollow Button</h3>
-                        <div class="panel panel-default medium">
-                            <div class="panel-heading primary">Estilo Hueco</div>
-                            <div class="panel-body">
+                        <div class="panel bordered medium">
+                            <div class="head primary">Estilo Hueco</div>
+                            <div class="body">
                                 Agrega la clase <strong>hollowclase</strong> a un botón para darle un estilo hueco.
                                 <pre>
 <code data-language="html">
@@ -202,9 +202,9 @@
 
                     <div class="disabledbuttons">
                         <h3>Disabled Button</h3>
-                        <div class="panel panel-default medium">
-                            <div class="panel-heading primary">Estilos de botones desactivados</div>
-                            <div class="panel-body">
+                        <div class="panel bordered medium">
+                            <div class="head primary">Estilos de botones desactivados</div>
+                            <div class="body">
                                 El atributo <strong>disabled</strong> dará a los botones una apariencia descolorida.
                                 <pre>
 <code data-language="html">
@@ -249,9 +249,9 @@
                 <hr>
                 <div class="form-examples">
                     <h1 id="form_example">&#10148;Forms</h1>
-                    <div class="panel panel-default">
-                        <div class="panel-heading primary">Estilos de formularios y accesibilidad</div>
-                        <div class="panel-body">
+                    <div class="panel bordered">
+                        <div class="head primary">Estilos de formularios y accesibilidad</div>
+                        <div class="body">
                             El formulario nunca ha sido muy divertido, y puede ser absolutamente fustrante en un dispositivo móvil con su teclado en pantalla.
                             <pre>
                                 <code data-language="html">
@@ -320,9 +320,9 @@
                     </div>
                     <div class="form2">
                         <h3>Login form</h3>
-                        <div class="panel panel-default medium">
-                            <div class="panel-heading primary">Formulario de contacto</div>
-                            <div class="panel-body">
+                        <div class="panel bordered medium">
+                            <div class="head primary">Formulario de contacto</div>
+                            <div class="body">
                                 Un simple formulario de login jamas fue tan simple de darle estilo
                                 <pre>
 <code data-language="html">
@@ -348,8 +348,8 @@
 </pre>
                             </div>
                         </div>
-                        <div class="panel panel-default small">
-                            <div class="panel-body">
+                        <div class="panel bordered small">
+                            <div class="body">
                                 <form action="#" method="post">
                                     <div class="input-group small">
                                         <div>
@@ -378,15 +378,15 @@
                 <hr>
                 <div class="panels">
                     <h1 id="panels_example">&#10148;Panels</h1>
-                    <div class="panel panel-default">
-                        <div class="panel-heading primary">Paneles o cajas</div>
-                        <div class="panel-body">
+                    <div class="panel bordered">
+                        <div class="head primary">Paneles o cajas</div>
+                        <div class="body">
                             A veces es posible que necesite colocar su contenido en un cuadro para una mejor presentación. En la forma más básica, los paneles se les aplica un poco redondeo en los bordes y padding alrededor del contenido.
                             <pre>
 <code data-language="html">
-<div class="panel panel-default small">
-   <div class="panel-heading primary">panel head</div>
-   <div class="panel-body">
+<div class="panel bordered small">
+   <div class="head primary">panel head</div>
+   <div class="body">
       panel body
    </div>
 </div>
@@ -397,27 +397,27 @@
                     </div>
                     <h3>Small Panel</h3>
                     <div>
-                        <div class="panel panel-default small">
-                            <div class="panel-heading primary"><strong>Small panel primary</strong></div>
-                            <div class="panel-body">
+                        <div class="panel bordered small">
+                            <div class="head primary"><strong>Small panel primary</strong></div>
+                            <div class="body">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet harum minima modi, obcaecati perferendis porro repudiandae temporibus velit voluptatibus voluptatum? A delectus eius et eveniet exercitationem fugiat neque repellat reprehenderit.
                             </div>
                         </div>
                     </div>
                     <h3>Medium panel</h3>
                     <div>
-                        <div class="panel panel-default medium">
-                            <div class="panel-heading danger"><strong>Medium Panel and danger</strong></div>
-                            <div class="panel-body">
+                        <div class="panel bordered medium">
+                            <div class="head danger"><strong>Medium Panel and danger</strong></div>
+                            <div class="body">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet harum minima modi, obcaecati perferendis porro repudiandae temporibus velit voluptatibus voluptatum? A delectus eius et eveniet exercitationem fugiat neque repellat reprehenderit.
                             </div>
                         </div>
                     </div>
                     <h3>Full panel</h3>
                     <div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading success"><strong>Full panel and success</strong></div>
-                            <div class="panel-body">
+                        <div class="panel bordered">
+                            <div class="head success"><strong>Full panel and success</strong></div>
+                            <div class="body">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet harum minima modi, obcaecati perferendis porro repudiandae temporibus velit voluptatibus voluptatum? A delectus eius et eveniet exercitationem fugiat neque repellat reprehenderit.
                             </div>
                         </div>
@@ -430,9 +430,9 @@
                 <div>
                     <h1 id="table_example">&#10148;Tables</h1>
                     <div class="table_examples">
-                        <div class="panel panel-default medium">
-                            <div class="panel-heading primary">Estilos de tablas</div>
-                            <div class="panel-body">
+                        <div class="panel bordered medium">
+                            <div class="head primary">Estilos de tablas</div>
+                            <div class="body">
                                 El elemento Tabla representa datos en dos dimensiones o más. Fomentamos el uso de un formato adecuado con <strong>thead</strong> y <strong>tbody</strong> para crear un formato de tabla. El código se vuelve más limpio.
                                 <pre>
 <code data-language="html">
@@ -496,9 +496,9 @@
                             </table>
                         </div>
                         <h3>Striped table</h3>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Tablas rayadas o zebras</div>
-                            <div class="panel-body">
+                        <div class="panel bordered">
+                            <div class="head">Tablas rayadas o zebras</div>
+                            <div class="body">
                                 Es posible crear tablas rayas o de zebra con solo agregar la clase <strong>striped</strong> como una clase extra en tu tabla
                                 <pre>
 <code data-language="html">
@@ -537,9 +537,9 @@
                             </table>
                         </div>
                         <h3>Bordered table</h3>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Tablas con bordes</div>
-                            <div class="panel-body">
+                        <div class="panel bordered">
+                            <div class="head">Tablas con bordes</div>
+                            <div class="body">
                                 Es posible crear tablas con bordes agregando la clase <strong>bordered</strong> esta se puede utilizar en conjunto con <strong>striped</strong>
                                 <pre>
 <code data-language="html">
@@ -578,9 +578,9 @@
                             </table>
                         </div>
                         <h3>Hover table success</h3>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Tablas con bordes</div>
-                            <div class="panel-body">
+                        <div class="panel bordered">
+                            <div class="head">Tablas con bordes</div>
+                            <div class="body">
                                 Si quieres agregar un efecto cuando el usuario pase el puntero por encima de una fila, con solo agregar la clase <strong>hover</strong> puedes lograr esto, como un plus puedes agregarle colores a los encabezados utilizando las clases<strong>primary</strong>, <strong>success</strong> y <strong>danger</strong>
                                 <pre>
 <code data-language="html">
@@ -686,16 +686,18 @@
         </div>
 
     </div>
-    <div class="right">
-        <a href="#content_table" class="primary undecoration important">&#10162;Volver al inicio</a>
-    </div>
+
     <div>
+        <div class="right">
+            <a href="#content_table" class="primary undecoration important">&#10162;Volver al inicio</a>
+        </div>
         <hr>
         <h1 id="grid_example">&#10148;Grid css based on Flex</h1>
-        <div class="panel panel-default medium">
-            <div class="panel-heading primary">Sistema de cuadriculas basado en FlexBox</div>
-            <div class="panel-body">
-                Tienes a tu disposición un sistema de cuadriculas totalmente responsive y felxible para cualquier ambiente. Si te fijas todo lo anteriormente esta construido con este sistema :)
+        <div class="panel bordered medium">
+            <div class="head primary">Sistema de cuadriculas basado en FlexBox</div>
+            <div class="body">
+                Tienes a tu disposición un sistema de cuadriculas totalmente responsive y felxible para cualquier ambiente. Si te fijas todo lo anteriormente esta construido con este sistema. Puedes ver ejemplos de templates en el siguiente enlace
+                <a href="template_exmaples.html" class="important undecoration primary">Templates</a>
                 <pre>
 <code data-language="html">
 <div class="row">
