@@ -16,8 +16,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="90" column="61" selection-start-line="90" selection-start-column="61" selection-end-line="90" selection-end-column="61" />
+            <state relative-caret-position="216">
+              <caret line="760" column="35" selection-start-line="760" selection-start-column="35" selection-end-line="760" selection-end-column="35" />
               <folding>
                 <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -163,12 +163,12 @@
       <workItem from="1540297941126" duration="1298000" />
       <workItem from="1540309429888" duration="26000" />
       <workItem from="1540393327202" duration="11124000" />
-      <workItem from="1540517257088" duration="6670000" />
+      <workItem from="1540517257088" duration="6820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22490000" />
+    <option name="totallyTimeSpent" value="22640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -183,7 +183,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3292683" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -262,8 +262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="90" column="61" selection-start-line="90" selection-start-column="61" selection-end-line="90" selection-end-column="61" />
+        <state relative-caret-position="216">
+          <caret line="760" column="35" selection-start-line="760" selection-start-column="35" selection-end-line="760" selection-end-column="35" />
           <folding>
             <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
