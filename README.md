@@ -2,7 +2,7 @@
 
 #### Ligne CSS es una hoja de estilo ligera basada en necesidades comunes para facilitar la manera de dar estilo a los elementos de un sitio web.
 
-> En su versión normal pesa 28.7kb y en su versión mini 19.4kb.
+> En su versión para **desarrollo** tiene un peso de 30.3kb y en su versión para **producción** 20.2kb.
 
 ------------
 
