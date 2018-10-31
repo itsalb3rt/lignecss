@@ -17,8 +17,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="709" column="97" lean-forward="true" selection-start-line="709" selection-start-column="97" selection-end-line="709" selection-end-column="97" />
+            <state relative-caret-position="221">
+              <caret line="85" column="87" selection-start-line="85" selection-start-column="87" selection-end-line="85" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -42,7 +42,7 @@
       <find>panel-default</find>
       <find>panel-heading</find>
       <find>panel-body</find>
-      <find>A veces es posible que necesite colocar su</find>
+      <find />
       <find>butto</find>
       <find>table.smal</find>
       <find>a.</find>
@@ -54,6 +54,7 @@
       <find>card</find>
       <find>&lt;strong&gt;</find>
       <find>lay</find>
+      <find>github</find>
     </findStrings>
     <replaceStrings>
       <replace>head</replace>
@@ -83,7 +84,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -92,6 +93,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,7 +110,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -151,29 +152,30 @@
       <workItem from="1540309429888" duration="26000" />
       <workItem from="1540393327202" duration="11124000" />
       <workItem from="1540517257088" duration="7522000" />
-      <workItem from="1540578440165" duration="289000" />
+      <workItem from="1540578440165" duration="887000" />
+      <workItem from="1540949977246" duration="52000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23631000" />
+    <option name="totallyTimeSpent" value="24281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26606685" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2692802" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.38075882" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -190,6 +192,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16307">
+          <caret line="709" column="97" lean-forward="true" selection-start-line="709" selection-start-column="97" selection-end-line="709" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19251">
@@ -249,8 +258,8 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="709" column="97" lean-forward="true" selection-start-line="709" selection-start-column="97" selection-end-line="709" selection-end-column="97" />
+        <state relative-caret-position="221">
+          <caret line="85" column="87" selection-start-line="85" selection-start-column="87" selection-end-line="85" selection-end-column="87" />
         </state>
       </provider>
     </entry>
