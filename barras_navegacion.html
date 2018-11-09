@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Barras de navegación</title>
+    <link rel="stylesheet" href="src/ligne.css">
+    <!-- Rainbow -->
+    <link rel="stylesheet" href="extra/style.css">
+    <script src="extra/rainbow-custom.min.js"></script>
+    <script src="extra/html.js"></script>
+    <style>
+        /*Esto es solo para la demo, no se incluye en la libreria y tampoco es necesario hacerlo*/
+
+        * {
+            font-family: Verdana,sans-serif;
+        }
+        div.margin{
+            margin: 10px auto;
+        }
+        .demo1grid .box,.box-row {
+            position: relative;
+            box-sizing: border-box;
+            min-height: 1rem;
+            margin-bottom: 0;
+            background: #ff726b;
+            border: 1px solid #FFF;
+            border-radius: 2px;
+            overflow: hidden;
+            text-align: center;
+            color: #fff;
+        }
+        .demo1grid .box-row {
+            margin-bottom: 1rem;
+        }
+        .demo1grid .box, .box-row {
+            padding: 1rem;
+        }
+        a.credit,a.credit:visited,a.credit:hover{
+            color: tomato;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        ul li{
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row center-lg">
+        <div class="col-lg-12">
+            <div class="box">
+                <h1 class="gradient">Ligne CSS</h1>
+            </div>
+        </div>
+    </div>
+    <div class="panel bordered text">
+        <div class="body">
+            <h1>➤Barras de navegación</h1>
+            <p>
+                Tener una navegación fácil de usar es importante para cualquier sitio web. Ligne incluye algunas barras de navegación para hacerle la vida más cómoda.
+            </p>
+            <div class="panel bordered">
+                <div class="body ejemplo-1">
+                    <p>
+                        Una barra de navegación sencilla seria como el siguiente ejemplo
+                    </p>
+                    <div style="max-width: 600px">
+                        <ul class="horizontal-nav top">
+                            <li><a href="#" class="logo"><strong>Some logo</strong></a></li>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">People</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                    <pre>
+                        <code data-language="html">
+<ul class="horizontal-nav top">
+    <li><a href="#" class="logo"><strong>Some logo</strong></a></li>
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">People</a></li>
+    <li><a href="#">About</a></li>
+</ul>
+                        </code>
+                </pre>
+                    <div>
+                        <h3>Efecto hover</h3>
+                        <p>Puedes agregar la clase <span class="code">hover</span> al elemento padre <span class="code">ul</span> para lograr un efecto cuando el usuario pase el puntero sobre una opción</p>
+                        <div style="max-width: 600px">
+                            <ul class="horizontal-nav hover top">
+                                <li><a href="#" class="logo"><strong>Some logo</strong></a></li>
+                                <li><a href="#" class="active">Home</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">People</a></li>
+                                <li class="right"><a href="#">About</a></li>
+                            </ul>
+                        </div>
+                        <p>
+                            En este ejemplo hemos colocado un elemento a la derecha con la clase <span class="code">right</span> aplicada sobre el elemento <span class="code">li</span> que queremos ver en esta posición
+                        </p>
+                        <pre>
+                    <code data-language="html">
+<ul class="horizontal-nav hover top">
+<li class="right"><a href="#">About</a></li>
+</ul>
+                    </code>
+                </pre>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="panel bordered">
+                <div class="body ejemplo-3">
+                    <h3>Barra de navegación sticky</h3>
+                    <p>
+                        Esta clase hace que tu barra de navegación se pegue en la parte superior luego de que se desplace el <span class="code">scroll</span> para crear una barra de navegación con alta presencia en tu página.
+                    </p>
+                    <div style="max-width: 600px;max-height: 200px;overflow-y: scroll;border: solid 1px grey;padding: 0px 10px 10px 0px;">
+                        <div style="background-color:dodgerblue;color: white;padding: 4px;">
+                            <h2>Some header</h2>
+                            <p>Scroll down to see the sticky effect on nav.</p>
+                        </div>
+                        <ul class="horizontal-nav hover sticky top">
+                            <li><a href="#" class="logo"><strong>Some logo</strong></a></li>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">People</a></li>
+                            <li class="right"><a href="#">About</a></li>
+                        </ul>
+                        <div>
+                            <h4>some header....</h4>
+                            <p>some text....</p>
+                            <p>some text....</p>
+                            <p>some text....</p>
+                            <p>some text....</p>
+                            <p>some text....</p>
+                            <p>some text....</p>
+                            <p>some text....</p>
+                            <p>some text....</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel bordered">
+                <div class="body ejemplo-4">
+                    <h3>Barra de navegación gris</h3>
+                    <p>
+                        Es posible cambiar el color junto a los efectos hover con solo especificarlo con la clase <span class="code">grey</span>
+                    </p>
+                    <div style="max-width: 600px">
+                        <ul class="horizontal-nav hover grey top">
+                            <li><a href="#" class="logo"><strong>Some logo</strong></a></li>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">People</a></li>
+                            <li class="right"><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                    <pre>
+                        <code data-language="html">
+<ul class="horizontal-nav hover grey top">
+
+</ul>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="panel bordered">
+                <div class="body">
+                    <h3>Otras opciones y utilitario</h3>
+                    <p>A continuación puedes ver las clases disponibles que puedes aplicar</p>
+                    <p>Clases elemento padre <span class="code">ul</span></p>
+                    <ul>
+                        <li><span class="code">fixed</span> Hace que la barra de navegación permanezca en la parte superior o inferior de la página, incluso cuando se desplaza la página
+                        </li>
+                        <li><span class="code">top</span> Hace que la barra de navegación se pegue en la parte superior de la pagina <em>(Se utiliza junto a la clase <span class="code">fixed</span>)</em></li>
+                        <li><span class="code">bottom</span> Hace que la barra de navegación se pegue en la parte inferior de la pagina <em>(Se utiliza junto a la clase <span class="code">fixed</span>)</em></li>
+                    </ul>
+                    <p>Clases elemento hijos <span class="code">li</span></p>
+                    <ul>
+                        <li><span class="code">right</span> Envia un elemento a la derecha de la barra de navegación</li>
+                    </ul>
+                    <p>Clases elemento hijos <span class="code">a</span></p>
+                    <ul>
+                        <li><span class="code">active</span> Coloca un borde en la parte inferior al elemento <span class="code">a</span> con esta clase</li>
+                        <li><span class="code">logo</span> Evita que se apliquen ciertos efectos sobre el elemento con la clase logo, por ejemplo el efecto de cambio de fondo al hacer <span class="code">hover</span> sobre el elemento con la clase <span class="code">logo</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--pie de pagina-->
+    <div class="row center-lg" style="margin: 20px auto;">
+        <div class="col-lg-12">
+            <div class="box">
+                <a class="credit" href="https://github.com/itsalb3rt/lignecss">Albert E. Hidalgo Taveras on GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

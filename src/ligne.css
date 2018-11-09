@@ -504,6 +504,86 @@ button, input, optgroup, select, textarea {
     background-color: #4CAF50;
     border-color: #4CAF50;
 }
+/*Menus*/
+ul.horizontal-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    min-height: 2.6rem; /*For responsive*/
+}
+
+ul.horizontal-nav.top.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul.horizontal-nav.bottom.fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+ul.horizontal-nav li {
+    float: left;
+    margin: 0px!important;
+}
+
+ul.horizontal-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px 5px 16px;
+    text-decoration: none;
+}
+
+ul.horizontal-nav.hover li a:hover:not(.active) {
+    background-color: #111;
+    border-bottom: solid 4px tomato;
+}
+
+ul.horizontal-nav.hover li a.logo:hover {
+    background-color: transparent;
+    color: white;
+    border-bottom: solid 4px transparent;
+}
+
+/*Grey nav*/
+
+ul.horizontal-nav.grey {
+    border: 1px solid #e7e7e7 !important;
+    background-color: #f3f3f3 !important;
+}
+
+ul.horizontal-nav.grey li a {
+    color: #666 !important;
+}
+
+ul.horizontal-nav.hover.grey li a:hover:not(.active) {
+    background-color: transparent!important;
+}
+
+/*Utiliti nav*/
+ul.horizontal-nav .active {
+    border-bottom: solid 4px #8BC34A;
+}
+
+ul.horizontal-nav li.right {
+    float: right;
+}
+@media screen and (max-width: 600px){
+    ul.horizontal-nav li.right,
+    ul.horizontal-nav li {float: none;}
+}
+
+/*Sticky*/
+ul.horizontal-nav.sticky{
+    position: -webkit-sticky!important; /* for safari */
+    position: sticky!important;
+    top: 0!important;
+}
 
 /*Tablas*/
 
