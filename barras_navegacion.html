@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <meta charset="UTF-8">
     <title>Barras de navegación</title>
-    <link rel="stylesheet" href="src/ligne.css">
+    <link rel="stylesheet" href="src/ligne.css?v1.2">
     <!-- Rainbow -->
     <link rel="stylesheet" href="extra/style.css">
     <script src="extra/rainbow-custom.min.js"></script>
@@ -51,13 +51,13 @@
     <div class="row center-lg">
         <div class="col-lg-12">
             <div class="box">
-                <h1 class="gradient">Ligne CSS</h1>
+                <h1 class="gradient" onClick="location.href='index.html'" style="cursor:pointer;">Ligne CSS</h1>
             </div>
         </div>
     </div>
     <div class="panel bordered text">
         <div class="body">
-            <h1>➤Barras de navegación</h1>
+            <h1>➤Barras de navegación horizontal</h1>
             <p>
                 Tener una navegación fácil de usar es importante para cualquier sitio web. Ligne incluye algunas barras de navegación para hacerle la vida más cómoda.
             </p>
@@ -193,7 +193,86 @@
                     </ul>
                 </div>
             </div>
-        </div>
+            </div>
+
+            <div class="panel">
+                <div class="body">
+                    <h1>➤Barra de navegación vertical</h1>
+                    <div class="panel bordered">
+                        <div class="body">
+                            <h3>Barra de navegación vertical normal</h3>
+                            <p>
+                                En ocasiones queremos crear menus sencillos de manera vertical, para estas situaciones contamos con algunas clases que hacen este trabajo mas fácil
+                            </p>
+                            <ul class="vertical-nav light">
+                                <li><a href="#" class="logo"><strong>Some logo</strong></a></li>
+                                <li><a class="active" href="#">Home</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">People</a></li>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                            <pre>
+                                    <code data-language="html">
+    <ul class="vertical-nav light hover">
+        <li><a href="#" class="logo"><strong>Some logo</strong></a></li>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">People</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+                                    </code>
+                                </pre>
+                            <p>
+                                Existen algunas clases para tener una navegación con efecto <span class="code">hover</span> y otras dos clase <span class="code">dark</span> y <span class="code">light</span> para el color de la navegación
+                            </p>
+                            <ul class="vertical-nav dark hover">
+                                <li><a href="#" class="logo"><strong>Some logo</strong></a></li>
+                                <li><a class="active" href="#">Home</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">People</a></li>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                            <pre>
+                                    <code data-language="html">
+    <ul class="vertical-nav dark hover">
+
+    </ul>
+                                    </code>
+                                </pre>
+                        </div>
+                    </div>
+
+                    <div class="panel bordered">
+                        <div class="body">
+                            <h3>Barra de navegación vertical pagina completa</h3>
+                            <p>
+                                En ocasiones tambien queremos tener una barra de navegacion vertical que este simepre presente en la pagina, esto lo podemos hacer con solo agregar la clase <span class="code">full</span> al elemento padre <span class="code">ul</span>
+                            </p>
+                            <a href="examples/vertical_full_nav.html" class="important primary undecoration">Ver ejemplo</a>
+                            <pre>
+                                <code data-language="html">
+<ul class="vertical-nav light hover full">
+
+</ul>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="panel bordered">
+                        <div class="body">
+                            <h3>Otras opciones y utilitario</h3>
+                            <p>
+                                Las siguientes clases se pueden aplicar al elemento padre <span class="code">ul</span>
+                            </p>
+                            <ul>
+                                <li><span class="code">bordered</span> Crea bordes al rededor de todo el menu de navegación</li>
+                                <li><span class="code">round-borders</span> Redondea los 4 bordes del contenedor principal</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
     </div>
     <!--pie de pagina-->
     <div class="row center-lg" style="margin: 20px auto;">

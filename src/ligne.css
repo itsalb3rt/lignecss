@@ -585,6 +585,90 @@ ul.horizontal-nav.sticky{
     top: 0!important;
 }
 
+ul.vertical-nav {
+    list-style-type: none;
+    background-color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+    width: 18%;
+}
+
+ul.vertical-nav.full {
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.vertical-nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/*Dark style*/
+ul.vertical-nav.dark {
+    background-color: #333 !important;
+}
+
+ul.vertical-nav.dark li a {
+    color: white !important;
+}
+
+ul.vertical-nav.dark.hover li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+ul.vertical-nav.dark.hover li a.logo:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/*light Style*/
+ul.vertical-nav.light {
+    background-color: #f3f3f3 !important;
+}
+
+ul.vertical-nav.light li a {
+    color: #666 !important;
+}
+
+ul.vertical-nav.light.hover li a:hover:not(.active) {
+    background-color: #ddd;
+    color: white;
+}
+
+ul.vertical-nav.light.hover li a.logo:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/*Utilitario*/
+ul.vertical-nav li a.active {
+    border-bottom: solid 4px #8BC34A;
+}
+
+ul.vertical-nav.light li a.active {
+    border-bottom: solid 4px #008CBA!important;
+}
+
+ul.vertical-nav.bordered{
+    border: solid grey 1px;
+}
+ul.vertical-nav.bordered li {
+    border-bottom: 1px solid darkgrey;
+}
+
+ul.vertical-nav.bordered li:last-child {
+    border-bottom: none;
+}
+
+ul.vertical-nav.round-borders{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
 /*Tablas*/
 
 .table {
