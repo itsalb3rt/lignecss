@@ -6,13 +6,43 @@ Albert E. Hidalgo Taveras
 Git: https://github.com/itsalb3rt
 License: MIT
 **/
+
+/*Extra*/
 h1.gradient {
     font-size: 72px;
     background: -webkit-linear-gradient(rgba(3, 169, 244, 1), rgba(13, 71, 161, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/*Colors*/
+:root {
+    /*Root colors*/
+    --white:#fff;
+    --black:#000;
+    --grey:grey;
+    --semi-light-grey:#ddd;
+    --light-grey:#f5f5f5;
+    --tomato:tomato;
+    /*Elements colors*/
+    --primary-blue: #03A9F4;
+    --primary-blue-hover:#0396dc;
 
+    --secondary-grey:#607D8B;
+    --secondary-grey-hover:#536c7a;
+
+    --success-green:#4CAF50;
+    --success-green-hover:#4b9a4d;
+
+    --danger-red:#d32f2f;
+    --danger-red-hover:#b71c1c;
+
+    --warning-yellow:#FFB300;
+    --warning-yellow-hover:#e0a800;
+
+    --info-cyan:#17a2b8;
+    --info-cyan-hover: #1791a8;
+
+}
 /*Normalizar estilos*/
 html {
     line-height: 1.15;
@@ -192,7 +222,7 @@ button, input, optgroup, select, textarea {
 
 .button {
     outline: none;
-    background-color: white;
+    background-color: var(--white);
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -227,15 +257,15 @@ button, input, optgroup, select, textarea {
 }
 
 .button.primary {
-    color: #fff;
-    background-color: #03A9F4;
-    border-color: #03A9F4;
+    color: var(--white);
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
 }
 
 .button.primary:hover {
-    color: #fff;
-    background-color: #0396dc;
-    border-color: #0396dc;
+    color: var(--white);
+    background-color: var(--primary-blue-hover);
+    border-color: var(--primary-blue-hover);
 }
 
 .button:not(:disabled):not(.disabled) {
@@ -243,63 +273,63 @@ button, input, optgroup, select, textarea {
 }
 
 .button.secondary {
-    color: #fff;
-    background-color: #607D8B;
-    border-color: #607D8B;
+    color: var(--white);
+    background-color: var(--secondary-grey);
+    border-color: var(--secondary-grey);
 }
 
 .button.secondary:hover {
-    color: #fff;
-    background-color: #536c7a;
-    border-color: #536c7a;
+    color: var(--white);
+    background-color: var(--secondary-grey-hover);
+    border-color: var(--secondary-grey-hover);
 }
 
 .button.success {
-    color: #fff;
-    background-color: #4CAF50;
-    border-color: #4CAF50;
+    color: var(--white);
+    background-color: var(--success-green);
+    border-color: var(--success-green);
 }
 
 .button.success:hover {
-    color: #fff;
-    background-color: #4b9a4d;
-    border-color: #4b9a4d;
+    color: var(--white);
+    background-color: var(--success-green-hover);
+    border-color: var(--success-green-hover);
 }
 
 .button.danger {
-    color: #fff;
-    background-color: #d32f2f;
-    border-color: #d32f2f;
+    color: var(--white);
+    background-color: var(--danger-red);
+    border-color: var(--danger-red);
 }
 
 .button.danger:hover {
-    color: #fff;
-    background-color: #b71c1c;
-    border-color: #b71c1c;
+    color: var(--white);
+    background-color: var(--danger-red-hover);
+    border-color: var(--danger-red-hover);
 }
 
 .button.warning {
     color: #212529;
-    background-color: #FFB300;
-    border-color: #FFB300;
+    background-color: var(--warning-yellow);
+    border-color: var(--warning-yellow);
 }
 
 .button.warning:hover {
     color: #212529;
-    background-color: #e0a800;
-    border-color: #d39e00;
+    background-color: var(--warning-yellow-hover);
+    border-color: var(--warning-yellow-hover);
 }
 
 .button.info {
-    color: #fff;
-    background-color: #17a2b8;
-    border-color: #17a2b8;
+    color: var(--white);
+    background-color: var(--info-cyan);
+    border-color: var(--info-cyan);
 }
 
 .button.info:hover {
-    color: #fff;
-    background-color: #138496;
-    border-color: #117a8b;
+    color: var(--white);
+    background-color: var(--info-cyan-hover);
+    border-color: var(--info-cyan);
 }
 
 .button.hollow, .button.hollow:hover, .button.hollow:focus {
@@ -311,8 +341,8 @@ button, input, optgroup, select, textarea {
 }
 
 .button.hollow:hover {
-    border-color: grey;
-    color: #000;
+    border-color: var(--grey);
+    color: var(--black);
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
@@ -344,7 +374,7 @@ button, input, optgroup, select, textarea {
 /*Formularios*/
 .input-group label {
     font-weight: bold;
-    color: black;
+    color: var(--black);
 }
 
 .input-group input[type='email'],
@@ -447,21 +477,21 @@ button, input, optgroup, select, textarea {
 
 .panel {
     margin-bottom: 20px;
-    background-color: #fff;
+    background-color: var(--white);
     border: 1px solid transparent;
     border-radius: 4px;
 }
 
 .panel.bordered {
-    border-color: #ddd;
+    border-color: var(--semi-light-grey);
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 
 .panel > .head {
     color: #333;
-    background-color: #f5f5f5;
-    border-color: #ddd;
+    background-color: var(--light-grey);
+    border-color: var(--semi-light-grey);
 }
 
 .panel > .head {
@@ -488,21 +518,21 @@ button, input, optgroup, select, textarea {
 }
 
 .panel .head.primary {
-    color: #fff;
-    background-color: #03A9F4;
-    border-color: #03A9F4;
+    color: var(--white);
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
 }
 
 .panel .head.danger {
-    color: #fff;
-    background-color: #d32f2f;
-    border-color: #d32f2f;
+    color: var(--white);
+    background-color: var(--danger-red);
+    border-color: var(--danger-red);
 }
 
 .panel .head.success {
-    color: #fff;
-    background-color: #4CAF50;
-    border-color: #4CAF50;
+    color: var(--white);
+    background-color: var(--success-green);
+    border-color: var(--success-green);
 }
 /*Menus*/
 ul.horizontal-nav {
@@ -533,7 +563,7 @@ ul.horizontal-nav li {
 
 ul.horizontal-nav li a {
     display: block;
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 14px 16px 5px 16px;
     text-decoration: none;
@@ -541,12 +571,12 @@ ul.horizontal-nav li a {
 
 ul.horizontal-nav.hover li a:hover:not(.active) {
     background-color: #111;
-    border-bottom: solid 4px tomato;
+    border-bottom: solid 4px var(--tomato);
 }
 
 ul.horizontal-nav.hover li a.logo:hover {
     background-color: transparent;
-    color: white;
+    color: var(--white);
     border-bottom: solid 4px transparent;
 }
 
@@ -567,7 +597,7 @@ ul.horizontal-nav.hover.grey li a:hover:not(.active) {
 
 /*Utiliti nav*/
 ul.horizontal-nav .active {
-    border-bottom: solid 4px #8BC34A;
+    border-bottom: solid 4px var(--success-green);
 }
 
 ul.horizontal-nav li.right {
@@ -587,7 +617,7 @@ ul.horizontal-nav.sticky{
 
 ul.vertical-nav {
     list-style-type: none;
-    background-color: #EEEEEE;
+    background-color: var(--white);
     margin: 0;
     padding: 0;
     width: 18%;
@@ -601,7 +631,7 @@ ul.vertical-nav.full {
 
 ul.vertical-nav li a {
     display: block;
-    color: #000;
+    color: var(--black);
     padding: 8px 16px;
     text-decoration: none;
 }
@@ -612,22 +642,22 @@ ul.vertical-nav.dark {
 }
 
 ul.vertical-nav.dark li a {
-    color: white !important;
+    color: var(--white) !important;
 }
 
 ul.vertical-nav.dark.hover li a:hover:not(.active) {
     background-color: #555;
-    color: white;
+    color: var(--white);
 }
 
 ul.vertical-nav.dark.hover li a.logo:hover {
     background-color: transparent;
-    color: white;
+    color: var(--white);
 }
 
 /*light Style*/
 ul.vertical-nav.light {
-    background-color: #f3f3f3 !important;
+    background-color: var(--white) !important;
 }
 
 ul.vertical-nav.light li a {
@@ -635,26 +665,26 @@ ul.vertical-nav.light li a {
 }
 
 ul.vertical-nav.light.hover li a:hover:not(.active) {
-    background-color: #ddd;
-    color: white;
+    background-color: var(--semi-light-grey);
+    color: var(--white);
 }
 
 ul.vertical-nav.light.hover li a.logo:hover {
     background-color: transparent;
-    color: white;
+    color: var(--white);
 }
 
 /*Utilitario*/
 ul.vertical-nav li a.active {
-    border-bottom: solid 4px #8BC34A;
+    border-bottom: solid 4px var(--success-green);
 }
 
 ul.vertical-nav.light li a.active {
-    border-bottom: solid 4px #008CBA!important;
+    border-bottom: solid 4px var(--primary-blue)!important;
 }
 
 ul.vertical-nav.bordered{
-    border: solid grey 1px;
+    border: solid var(--grey) 1px;
 }
 ul.vertical-nav.bordered li {
     border-bottom: 1px solid darkgrey;
@@ -685,7 +715,7 @@ table {
 .table td, .table th {
     padding: .5rem;
     vertical-align: top;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid var(--semi-light-grey);
 }
 
 th {
@@ -730,18 +760,18 @@ th {
 
 /*Colores de encabezados*/
 .table.primary thead th {
-    color: #fff;
-    background-color: #03A9F4;
+    color: var(--white);
+    background-color: var(--primary-blue);
 }
 
 .table.secondary thead th {
-    color: #fff;
-    background-color: #607D8B;
+    color: var(--white);
+    background-color: var(--secondary-grey);
 }
 
 .table.success thead th {
-    color: #fff;
-    background-color: #4CAF50;
+    color: var(--white);
+    background-color: var(--success-green);
 }
 
 .table.border-radius {
@@ -752,39 +782,39 @@ th {
 
 /*Estilos de enlaces*/
 a.primary, a.primary:visited, a.primary:active {
-    color: #03A9F4 !important;
+    color: var(--primary-blue) !important;
 }
 
 a.primary:hover {
-    color: tomato !important;
+    color: var(--tomato) !important;
 }
 
 a.white, a.white:visited, a.white:active {
-    color: white !important;
+    color: var(--white) !important;
 }
 
 a.success, a.success:visited, a.success:active {
-    color: #4CAF50 !important;
+    color: var(--success-green) !important;
 }
 
 a.success:hover {
-    color: #306d34 !important;
+    color: var(--success-green-hover) !important;
 }
 
 a.warning, a.warning:visited, a.warning:active {
-    color: #FFB300 !important;
+    color: var(--warning-yellow) !important;
 }
 
 a.warning:hover {
-    color: #ad7a00 !important;
+    color: var(--warning-yellow-hover) !important;
 }
 
 a.danger, a.danger:visited, a.danger:active {
-    color: #d32f2f !important;
+    color: var(--danger-red) !important;
 }
 
 a.danger:hover {
-    color: #d36a00 !important;
+    color: var(--danger-red-hover) !important;
 }
 
 a.important {
