@@ -657,7 +657,7 @@ ul.vertical-nav.dark.hover li a.logo:hover {
 
 /*light Style*/
 ul.vertical-nav.light {
-    background-color: var(--white) !important;
+    background-color: var(--light-grey) !important;
 }
 
 ul.vertical-nav.light li a {
