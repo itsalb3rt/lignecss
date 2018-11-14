@@ -384,6 +384,7 @@ button, input, optgroup, select, textarea {
 .input-group input[type='tel'],
 .input-group input[type='text'],
 .input-group input[type='url'],
+.input-group input[type='date'],
 .input-group textarea,
 .input-group select {
     padding: 10px;
@@ -406,6 +407,7 @@ button, input, optgroup, select, textarea {
 .input-group input[type='tel']:focus, .input-group input[type='tel']:active,
 .input-group input[type='text']:focus, .input-group input[type='text']:active,
 .input-group input[type='url']:focus, .input-group input[type='url']:active,
+.input-group input[type='date']:focus, .input-group input[type='date']:active,
 .input-group textarea:focus, .input-group textarea:active,
 .input-group select:focus, .input-group select:active {
     border-color: rgba(33, 150, 243, 0.8);
