@@ -6,7 +6,9 @@ Albert E. Hidalgo Taveras
 Git: https://github.com/itsalb3rt
 License: MIT
 **/
-
+*{
+    font-family: sans-serif;
+}
 /*Extra*/
 h1.gradient {
     font-size: 72px;
@@ -505,6 +507,7 @@ button, input, optgroup, select, textarea {
 
 .panel .body {
     padding: 15px;
+    word-break: break-all;
 }
 
 .panel .body label {

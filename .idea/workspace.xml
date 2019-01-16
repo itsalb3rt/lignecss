@@ -26,8 +26,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>panel-heading</find>
-      <find>panel-body</find>
       <find>A veces es posible que necesite colocar su</find>
       <find>butto</find>
       <find>table.smal</find>
@@ -56,6 +54,8 @@
       <find>col-md-2</find>
       <find>light</find>
       <find>input-</find>
+      <find>panel</find>
+      <find>.panel .body{</find>
     </findStrings>
     <replaceStrings>
       <replace>head</replace>
@@ -91,6 +91,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/color_palette.html" />
         <option value="$PROJECT_DIR$/barras_navegacion.html" />
+        <option value="$USER_HOME$/Desktop/freebie-footer-templates/basic/index.html" />
+        <option value="$USER_HOME$/Desktop/freebie-footer-templates/css/footer-distributed.css" />
         <option value="$PROJECT_DIR$/src/ligne.css" />
         <option value="$PROJECT_DIR$/src/ligne.min.css" />
       </list>
@@ -192,16 +194,20 @@
       <workItem from="1541892858716" duration="607000" />
       <workItem from="1541951209783" duration="21000" />
       <workItem from="1542222513705" duration="66000" />
+      <workItem from="1542803394394" duration="1599000" />
+      <workItem from="1544036068185" duration="48000" />
+      <workItem from="1544037310498" duration="61000" />
+      <workItem from="1547666679070" duration="61000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59743000" />
+    <option name="totallyTimeSpent" value="61512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19087404" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20115681" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -325,9 +331,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/palette.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/palette.scss" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -349,17 +353,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/freebie-footer-templates/basic/index.html" />
+    <entry file="file://$USER_HOME$/Desktop/freebie-footer-templates/css/footer-distributed.css" />
+    <entry file="file://$USER_HOME$/Desktop/freebie-footer-templates/footer-distributed.html" />
     <entry file="file://$PROJECT_DIR$/src/ligne.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3910">
-          <caret line="8" column="24235" selection-start-line="8" selection-start-column="24235" selection-end-line="8" selection-end-column="24235" />
+        <state relative-caret-position="221">
+          <caret line="8" column="7398" selection-start-line="8" selection-start-column="7398" selection-end-line="8" selection-end-column="7398" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ligne.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="524">
+          <caret line="509" column="26" lean-forward="true" selection-start-line="509" selection-start-column="4" selection-end-line="509" selection-end-column="26" />
         </state>
       </provider>
     </entry>
